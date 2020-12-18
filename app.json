@@ -1,14 +1,15 @@
 {
-  "pages":[
+  "pages": [
     "pages/getSubject/getSubject",
-   "pages/subject/subject",
-   "pages/out/out",
-   "pages/set/set"
+    "pages/subject/subject",
+    "pages/out/out",
+    "pages/setSubject/setSubject"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#1E90FF",
     "navigationBarTitleText": "我的课程",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
 }

@@ -1,4 +1,4 @@
-/* pages/subject/subject.wxss */
+/* pages/set/set.wxss */
 .top{
   display: flex;
   flex-direction: row;
@@ -15,14 +15,6 @@
   align-items: center;
 }
 
-.left{
-  width: 35rpx;
-  height: 102rpx;
-  font-size: 9pt;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
 .flex-item {
   width: 95rpx;
   height: 100px;

@@ -1,4 +1,4 @@
-<!--pages/setSubject/setSubject.wxml-->
+<!--pages/set/set.wxml-->
 <view class='top'>
   <view class='tianjia'>添加课程页面</view>
 </view>
@@ -19,17 +19,11 @@
     </view>
   </view>
   
-  <view class='kelength'>
-    <view class='btn' bindtap="bindButtonTap6">上课时间（星期）</view>
-    <view class='btn2'>
-      <input type='number ' bindinput="bindKeyInput6" minlength='1' maxlength='1' placeholder="点击上课时间（星期）输入数字" focus="{{focus6}}" />
-    </view>
-  </view>
 
   <view class='kelength'>
     <view class='btn' bindtap="bindButtonTap3">上课节数</view>
     <view class='btn2'>
-      <input type='number ' bindinput="bindKeyInput3" minlength='1' maxlength='1' placeholder="点击上课节数输入数字" focus="{{focus3}}" />
+      <input type='number ' bindinput="bindKeyInput3" minlength='1' maxlength='1' placeholder="点击上课时长输入数字" focus="{{focus3}}" />
     </view>
   </view>
 
@@ -53,3 +47,5 @@
 <view>
   <button bindtap="save" type='submit'>保存</button>
 </view>
+
+

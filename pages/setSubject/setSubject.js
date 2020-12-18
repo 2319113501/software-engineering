@@ -10,6 +10,7 @@ Page({
     focus3: false,
     focus4: false,
     focus5: false,
+    focus6: false,
     kcmc: "",
     didian:"",
     startzhou:"",
@@ -67,11 +68,20 @@ Page({
       endzhou: e.detail.value
     })
   },
-
+  bindButtonTap6: function () {
+    this.setData({
+      focus6: true
+    })
+  },
+  bindKeyInput6: function (e) {
+    this.setData({
+      num: e.detail.value
+    })
+  },
   //用于保存修改的数据
   save:function(){
     wx.setStorageSync('kcxx', this.data.kcmc + "  "+ this.data.didian + "  " + this.data.startzhou + "~" + this.data.endzhou + "周");
-   wx.setStorageSync('skcd', this.data.skcd);
+    wx.setStorageSync('num1', (this.data.skcd-1)+(this.data.num-1)*6);
     console.log( this.data.kcmc + "  " + this.data.didian + "  " + this.data.startzhou +"~"+this.data.endzhou+"周");
     wx.navigateTo({
       url: '../subject/subject'
